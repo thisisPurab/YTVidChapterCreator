@@ -1,0 +1,8 @@
+.topbar {
+    background-color: transparent !important;
+    height: 10vh;
+}
+
+.topbarname {
+    cursor: pointer;
+}
