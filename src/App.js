@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import { Container } from "react-bootstrap";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Login from "./pages/Auth/Login";
+import SignUp from "./pages/Auth/SignUp";
+import Course from "./pages/Course/Course";
+import MyCourses from "./pages/MyCourses/MyCourses";
+import Topbar from "./components/Navbar/Navbar";
+import LinkInput from "./components/LinkInput/LinkInput";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Container className="app">
+            <BrowserRouter>
+                <Topbar />
+                <Routes>
+                    <Route
+                        path="/"
+                        element={<LinkInput />}
+                    />
+                    <Route
+                        path="/login"
+                        element={<Login />}
+                    />
+                    <Route
+                        path="/signup"
+                        element={<SignUp />}
+                    />
+                    <Route
+                        path="/course"
+                        element={<Course />}
+                    />
+                    <Route
+                        path="/mycourses"
+                        element={<MyCourses />}
+                    />
+                </Routes>
+            </BrowserRouter>
+        </Container>
+    );
 }
 
 export default App;
