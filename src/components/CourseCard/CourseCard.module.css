@@ -9,7 +9,7 @@
 }
 
 .button:hover {
-    background-color: rgb(254, 213, 215);
+    background-color: rgb(75, 2, 5);
     transition: ease-in-out 0.5s;
 }
 
