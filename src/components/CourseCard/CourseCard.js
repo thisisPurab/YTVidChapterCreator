@@ -29,14 +29,19 @@ const CourseCard = ({ course }) => {
     return (
         <Card
             className="m-2"
-            style={{ width: "16rem" }}
+            style={{ width: "16rem", backgroundColor: "#181a1b" }}
         >
             <Card.Img
                 variant="top"
                 src={course.thumbnail}
             />
             <Card.Body>
-                <Card.Subtitle className="mb-2">{course.title}</Card.Subtitle>
+                <Card.Subtitle
+                    className="mb-2"
+                    style={{ color: "grey" }}
+                >
+                    {course.title}
+                </Card.Subtitle>
                 <Card.Text className={styles.channel}>
                     {course.channel}
                 </Card.Text>

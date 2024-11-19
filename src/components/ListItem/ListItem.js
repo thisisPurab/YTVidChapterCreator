@@ -30,6 +30,7 @@ const ListItem = ({ id, title, playOnSeek, played }) => {
                     <FontAwesomeIcon
                         icon={faPlay}
                         className={styles.icon}
+                        style={{ color: "white" }}
                     />
                 )}
                 {title}

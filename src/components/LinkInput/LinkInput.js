@@ -181,12 +181,18 @@ const LinkInput = () => {
             <form className={styles.linkinput}>
                 <h1>Welcome {name}</h1>
                 <input
+                    style={{ color: "rgb(216, 212, 207)" }}
                     type="text"
                     name="url"
                     ref={linkRef}
                     placeholder="Paste the YouTube url"
                 />
-                <button onClick={handleClick}>Create</button>
+                <button
+                    onClick={handleClick}
+                    style={{ color: "rgb(216, 212, 207)" }}
+                >
+                    Create
+                </button>
             </form>
         </div>
     );

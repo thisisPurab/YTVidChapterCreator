@@ -20,12 +20,13 @@ const Topbar = () => {
                     navigate("/");
                 }}
             >
-                <b>Chapterize</b>
+                <b style={{ color: "rgb(216, 212, 207)" }}>Chapterize</b>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav"></Navbar.Toggle>
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="me-auto">
                     <Nav.Link
+                        style={{ color: "#e8e6e3" }}
                         onClick={() => {
                             navigate("/mycourses");
                         }}
@@ -34,7 +35,12 @@ const Topbar = () => {
                     </Nav.Link>
                 </Nav>
                 <Nav>
-                    <Nav.Link eventKey={2}>{name}</Nav.Link>
+                    <Nav.Link
+                        eventKey={2}
+                        style={{ color: "#e8e6e3" }}
+                    >
+                        {name}
+                    </Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

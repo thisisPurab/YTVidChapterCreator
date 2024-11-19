@@ -1,17 +1,19 @@
 .button {
     padding-left: 2vw;
     text-align: start;
-    background-color: white;
+    /* background-color: white; */
+    background-color: rgb(19, 21, 22);
     height: 7vh;
     border: 0.5px solid grey;
     font-size: 1.4vh;
+    color: white;
 }
 
 .playIcon,
 .doneIcon {
     margin-left: 5px;
     margin-right: 5px;
-    color: black;
+    color: white;
     font-size: 2vh;
 }
 

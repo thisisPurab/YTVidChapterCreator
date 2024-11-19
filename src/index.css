@@ -6,13 +6,13 @@ body {
         "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #181a1b;
+    background-color: rgb(19, 21, 22);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
-    color: #e8e6e3;
+    color: rgb(216, 212, 207);
 }
 
 code {
